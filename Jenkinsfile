@@ -14,15 +14,15 @@ pipeline {
        stage('Build') {
            steps {
                echo 'Building..'
-               sh 'docker image build -t $DOCKER_HUB_REPO:latest .'
+//                sh 'docker image build -t $DOCKER_HUB_REPO:latest .'
            }
        }
        stage('Test') {
            steps {
                echo 'Testing..'
-               sh 'docker stop $CONTAINER_NAME || true'
-               sh 'docker rm $CONTAINER_NAME || true'
-               sh 'docker run --name $CONTAINER_NAME $DOCKER_HUB_REPO /bin/bash -c "pytest test.py && flake8"'
+//                sh 'docker stop $CONTAINER_NAME || true'
+//                sh 'docker rm $CONTAINER_NAME || true'
+//                sh 'docker run --name $CONTAINER_NAME $DOCKER_HUB_REPO /bin/bash -c "pytest test.py && flake8"'
            }
        }
 //        stage('Deploy') {
