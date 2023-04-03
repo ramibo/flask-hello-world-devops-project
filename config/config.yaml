@@ -1,15 +1,15 @@
-name: John Smith
-age: 35
-email: john.smith@example.com
-hobbies:
-  - hiking
-  - photography
-  - cooking
 address:
-  street: 123 Main St
   city: Anytown
   state: NY
+  street: 123 Main St
   zip: '12345'
+age: '36'
+email: john.smith@example.com
+hobbies:
+- hiking
+- photography
+- cooking
+name: ram
 phone:
-  home: '555-1234'
-  work: '555-5678'
+  home: 555-1234
+  work: 555-5678
